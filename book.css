@@ -1,0 +1,82 @@
+/* book.css */
+
+.container {
+  height: 100%;
+  width:100%;
+  position: relative;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+#hexagram-container {
+  margin: 0;
+  position: relative;
+  height: 400px;
+  width: 400px;
+
+}
+
+.line {
+  width: 100%;
+  height: 16%;
+}
+
+.bar {
+  height: 60%;
+  width: 35%;
+  background: black;
+  float: left;
+}
+
+.barc {
+  height: 60%;
+  width: 35%;
+  background: grey;
+  float: left;
+}
+
+.midbar {
+  height: 60%;
+  width: 30%;
+  background: black;
+  float: left;
+}
+
+.midbarc {
+  height: 60%;
+  width: 30%;
+  background: grey;
+  float:left;
+}
+
+.midbarw {
+  height: 60%;
+  width: 30%;
+  background: white;
+  float: left;
+}
+
+button {
+  border-radius: 50%;
+  background-color: grey;
+  border-width: 0px;
+  border-style: solid;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  color: grey;
+}
+
+body {
+  font-size: 30px;
+  color: grey;
+}
