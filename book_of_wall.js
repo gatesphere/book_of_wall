@@ -11,6 +11,10 @@ var group;
 
 var loaded = 0;
 
+function unlock() {
+	Pizzicato.context.resume();
+}
+
 function init() {
 	group = new Pizzicato.Group();
 	yinc = new Pizzicato.Sound({
@@ -28,11 +32,14 @@ function init() {
 		options: { path: './audio/yangc.webm', loop: true }
 	}, function() {loaded_file('yangc')});
 	
-    yangu = new Pizzicato.Sound({
+        yangu = new Pizzicato.Sound({
 		source: 'file',
 		options: { path: './audio/yangu.webm', loop: true }
 	}, function() {loaded_file('yangu')});
 	
+	document.addEventListener('touchstart', unlock, true);
+        document.addEventListener('touchend', unlock, true);
+        document.addEventListener('click', unlock, true);
 }
 
 function loaded_file(filename) {
